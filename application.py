@@ -6,7 +6,9 @@ import cv2
 
 st.title('Image Processing with Streamlit')
 
-model = YOLO("best.pt")
+application = YOLO("best.pt")
+
+model = application
 
 def evaluate(results, frame):
     boxes_data = results[0].boxes
